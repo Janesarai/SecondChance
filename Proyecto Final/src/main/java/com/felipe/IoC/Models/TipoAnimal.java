@@ -18,7 +18,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "tipoanimales")
 public class TipoAnimal extends Base{
-    
+
     private String tipoDeAnimal;
 
     @OneToMany(mappedBy="tipoDeAnimal", fetch = FetchType.LAZY)

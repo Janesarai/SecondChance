@@ -152,7 +152,6 @@ button{
     line-height: 35px;
     margin: 15px 6px 0;
     transition: .3s;
-    padding-top: 10px;
 }
 
 .social-icons a:hover{
@@ -168,4 +167,3 @@ button{
 .social-icons a:hover i {
     color: rgba(0, 0, 0, .3);
 }
-

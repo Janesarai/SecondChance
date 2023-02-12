@@ -1,0 +1,25 @@
+.navbar{
+    background-color: black;
+    
+}
+.logo{
+    width: 160px;
+}
+.cuerpo{
+    margin-top: 140px;
+    margin-left: 30px;
+    width: 500px;
+    display: inline-block;
+}
+.subTitulo{
+    font-family: courier;
+}
+.animacion{
+    margin-top: 200px;
+
+}
+img{
+    width: 300px;
+}
+
+
