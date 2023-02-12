@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+    color: #505962;
+    justify-content: center;
+    align-items: center;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* fondo video */
+.video-background{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgba(0,0,0,0.2);
+}
+video{
+    top:0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* caption fondo video */
+.caption {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    color: white;
+}
+.caption h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+.caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: .6rem 1.3rem;
+    background-color: #1EBBA3;
+}
+
+
+/* banner */
+.logo{
+    width: 10rem;
+}
+
+/* imagenes pie video animales */
+.animals li {
+    cursor: pointer; 
+}
+/* .animals li img{max-width: 100px; }  */
+
+
+
+
+/* publicaciones animales */
+
+.card{
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 9px solid #1ebba3; 
+    position: relative;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+/* Paginacion */
+.pagination{
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
+}
+
+.pagination li a{
+    color: #0AB1CE;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.previous-page, .next-page{
+    background: 0;
+    width: 80px;
+    border-radius: 85px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+
+.next-page:hover{
+    transform: translateX(5px);
+}
+
+.current-page, .dots{
+    background: rgb(187, 185, 185);
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active{
+    background: #0AB1CE;
+}
+
+.disable{
+    background: rgb(187, 185, 185);
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+/* Paginacion */
+.pagination{
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
+}
+
+.pagination li a{
+    color: #0AB1CE;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.previous-page, .next-page{
+    background: 0;
+    width: 80px;
+    border-radius: 85px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+
+.next-page:hover{
+    transform: translateX(5px);
+}
+
+.current-page, .dots{
+    background: rgb(187, 185, 185);
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active{
+    background: #0AB1CE;
+}
+
+.disable{
+    background: rgb(187, 185, 185);
+}
+
+
+
+@media (max-width:768px) {
+    .caption h1{
+        font-size: 1.4rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .caption h3 {
+        font-size:1.1rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn-lg{
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+    .col-md-8 h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
