@@ -20,7 +20,6 @@
         <div class="contenedor">
             <h1>Agregar nuevo Nombre</h1>
 
-
             <form:form action="/publicacion" method="POST" modelAttribute="nombre">
                 <div class="formularioNombre">
                     <p>

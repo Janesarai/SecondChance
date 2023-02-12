@@ -15,51 +15,9 @@ pageEncoding="UTF-8"%>
     <title>Como adoptar</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" >
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                    <img src="imagenes/Second Chance.png" class="logo" alt="logo home">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item" style="display: inline-block;">
-                        <a class="nav-link text-white" href="quienesSomos">¿Quíenes somos?</a>
-                    </li>
-                    <li class="nav-item" style="display: inline-block;">
-                        <a class="nav-link text-white" href="/como-Adoptar-A-Tu-Mascota">¿Cómo adoptar a tu mascota?</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ¿Como ayudar?
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/dona">Dona</a></li>
-                            <li><a class="dropdown-item" href="/hazteSocio">Hazte socio</a></li>
-                            <li><a class="dropdown-item" href="/fundaciones">Fundaciones</a></li>
-                            </ul>
-                    </li>
-                    <li class="nav-item dropdown text-white">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill"></i> Mi cuenta</a>
-                        <ul class="dropdown-menu">
-
-                         <%-- colocar un if --%>
-                        <li><a class="dropdown-item" href="/iniciasesion/registrate">Registro</a></li>
-                        <li><a class="dropdown-item" href="/iniciasesion/registrate">Inicio sesión</a></li>
-
-                        <li><a class="dropdown-item" href="/miPerfil">Mi perfil</a></li>
-                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    
+    <!-- Navbar -->
+    <jsp:include page="/WEB-INF/elementos/barraNavegacion.jsp"></jsp:include>
 
     <div class="row">
         <div class="cuerpo col">
