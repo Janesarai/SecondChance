@@ -25,10 +25,10 @@ public class Vacuna extends Base{
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-        name = "vacunas_animales", 
-        joinColumns = @JoinColumn(name = "vacunas_id"), 
-        inverseJoinColumns = @JoinColumn(name = "animal_id")
+            name = "vacunas_animales",
+            joinColumns = @JoinColumn(name = "vacunas_id"),
+            inverseJoinColumns = @JoinColumn(name = "animal_id")
     )
     private List<Mascota> animales;
-    
+
 }

@@ -61,6 +61,6 @@ public class User extends Base{
 
     @OneToMany(mappedBy="user", fetch = FetchType.LAZY)
     private List<Mascota> mascotas;
-    
+
 
 }
