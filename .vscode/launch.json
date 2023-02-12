@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MvcdemoApplication<mvcdemo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.felipe.IoC.MvcdemoApplication",
+            "projectName": "mvcdemo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
